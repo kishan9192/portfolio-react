@@ -1,9 +1,32 @@
+/* eslint-disable react/no-unescaped-entities */
+import { Typewriter } from "react-simple-typewriter";
+
 export const SubTitle = () => {
   return (
-    <h1 className="head-text sm:flex-1 sm:flex my-6 sm:text-start text-center">
-      I'm a
-      <span className="blue-gradient_text sm:text-start text-center flex flex-col font-semibold drop-shadow sm:ml-3">
-        Full Stack Developer
+    <h1 className="head-text sm:flex-1 sm:flex flex-wrap my-6 sm:text-start text-center">
+      I build
+      <span className="blue-gradient_text flex-wrap sm:text-start text-center font-semibold drop-shadow sm:ml-3">
+        <Typewriter
+          words={[
+            "web applications",
+            "mobile applications",
+            "RESTful APIs",
+            "asynchronous backends",
+            "prompts for OpenAI",
+            "intuitive user interfaces",
+            "responsive designs",
+            "maintainable CSS",
+            "reusable UI components",
+            "full-stack applications",
+          ]}
+          loop={1}
+          cursor
+          cursorBlinking
+          cursorStyle="_"
+          typeSpeed={70}
+          deleteSpeed={50}
+          delaySpeed={1000}
+        />
       </span>
     </h1>
   );
@@ -12,7 +35,7 @@ export const SubTitle = () => {
 export const NameTitle = () => {
   return (
     <h1 className="head-text flex sm:flex-1 my-4 sm:my-0 justify-center sm:justify-start">
-      Hello, I'm
+      Hola, I'm
       <span className="blue-gradient_text font-semibold drop-shadow ml-3">
         Kishan
       </span>

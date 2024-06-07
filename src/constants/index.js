@@ -1,18 +1,13 @@
-import { meta, shopify, starbucks, tesla } from "../assets/images";
+import { sanfoundry, innovaccer, gfg, accolite } from "../assets/images";
 import {
   car,
-  contact,
   css,
   estate,
-  express,
   git,
-  github,
   html,
   javascript,
   linkedin,
   mongodb,
-  motion,
-  mui,
   nextjs,
   nodejs,
   pricewise,
@@ -24,32 +19,23 @@ import {
   tailwindcss,
   threads,
   typescript,
+  geeksforgeeks,
+  leetcode,
+  hackerRankDark,
+  hackerrankLight,
+  githubDark,
+  githubLight,
+  python,
+  django,
+  reactNative,
+  openAI,
+  jest,
 } from "../assets/icons";
 
 export const skills = [
   {
-    imageUrl: css,
-    name: "CSS",
-    type: "Frontend",
-  },
-  {
-    imageUrl: express,
-    name: "Express",
-    type: "Backend",
-  },
-  {
-    imageUrl: git,
-    name: "Git",
-    type: "Version Control",
-  },
-  {
-    imageUrl: github,
-    name: "GitHub",
-    type: "Version Control",
-  },
-  {
-    imageUrl: html,
-    name: "HTML",
+    imageUrl: react,
+    name: "React",
     type: "Frontend",
   },
   {
@@ -58,19 +44,44 @@ export const skills = [
     type: "Frontend",
   },
   {
+    imageUrl: typescript,
+    name: "TypeScript",
+    type: "Frontend",
+  },
+  {
+    imageUrl: redux,
+    name: "Redux",
+    type: "State Management",
+  },
+  {
+    imageUrl: python,
+    name: "Python",
+    type: "Backend",
+  },
+  {
+    imageUrl: django,
+    name: "Django",
+    type: "Backend",
+  },
+  {
+    imageUrl: jest,
+    name: "Jest",
+    type: "Testing",
+  },
+  {
+    imageUrl: openAI,
+    name: "Prompt Engineering",
+    type: "openAI",
+  },
+  {
+    imageUrl: reactNative,
+    name: "React Native",
+    type: "Frontend",
+  },
+  {
     imageUrl: mongodb,
     name: "MongoDB",
     type: "Database",
-  },
-  {
-    imageUrl: motion,
-    name: "Motion",
-    type: "Animation",
-  },
-  {
-    imageUrl: mui,
-    name: "Material-UI",
-    type: "Frontend",
   },
   {
     imageUrl: nextjs,
@@ -83,14 +94,19 @@ export const skills = [
     type: "Backend",
   },
   {
-    imageUrl: react,
-    name: "React",
+    imageUrl: css,
+    name: "CSS",
     type: "Frontend",
   },
   {
-    imageUrl: redux,
-    name: "Redux",
-    type: "State Management",
+    imageUrl: git,
+    name: "Git",
+    type: "Version Control",
+  },
+  {
+    imageUrl: html,
+    name: "HTML",
+    type: "Frontend",
   },
   {
     imageUrl: sass,
@@ -102,19 +118,14 @@ export const skills = [
     name: "Tailwind CSS",
     type: "Frontend",
   },
-  {
-    imageUrl: typescript,
-    name: "TypeScript",
-    type: "Frontend",
-  },
 ];
 
 export const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#accbe1",
+    title: "Software Development Engineer - 2",
+    company_name: "Innovaccer",
+    icon: innovaccer,
+    iconBg: "#F6E0F7",
     date: "March 2020 - April 2021",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
@@ -124,10 +135,10 @@ export const experiences = [
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#fbc3bc",
+    title: "Software Development Engineer - 1",
+    company_name: "Innovaccer",
+    icon: innovaccer,
+    iconBg: "#F6E0F7",
     date: "Jan 2021 - Feb 2022",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
@@ -137,10 +148,10 @@ export const experiences = [
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#b7e4c7",
+    title: "Software Engineer",
+    company_name: "Accolite Digital",
+    icon: accolite,
+    iconBg: "#F9B583",
     date: "Jan 2022 - Jan 2023",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
@@ -150,10 +161,23 @@ export const experiences = [
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#a2d2ff",
+    title: "Author - Technical Content",
+    company_name: "GeeksforGeeks",
+    icon: gfg,
+    iconBg: "#EAF9EA",
+    date: "Jan 2023 - Present",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "Author - Technical Content",
+    company_name: "Sanfoundry",
+    icon: sanfoundry,
+    iconBg: "#B8E3FF",
     date: "Jan 2023 - Present",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
@@ -164,16 +188,31 @@ export const experiences = [
   },
 ];
 
-export const socialLinks = [
+export const socialLinks = (theme) => [
   {
     name: "GitHub",
-    iconUrl: github,
+    iconUrl: theme === "light" ? githubLight : githubDark,
     link: "https://github.com/kishan9192",
   },
   {
     name: "LinkedIn",
     iconUrl: linkedin,
     link: "https://www.linkedin.com/in/kishanmishraa/",
+  },
+  {
+    name: "HackerRank",
+    iconUrl: theme === "light" ? hackerRankDark : hackerrankLight,
+    link: "https://www.hackerrank.com/profile/kishan_mishra",
+  },
+  {
+    name: "Leetcode",
+    iconUrl: leetcode,
+    link: "https://leetcode.com/u/kishan9192/",
+  },
+  {
+    name: "GeeksforGeeks",
+    iconUrl: geeksforgeeks,
+    link: "https://www.geeksforgeeks.org/user/mishrakishan1/",
   },
 ];
 

@@ -21,6 +21,7 @@ export default {
       },
       boxShadow: {
         card: "0px 1px 2px 0px rgba(0, 0, 0, 0.05)",
+        timelineCard: "0px 4px 16px 0px #00000029",
       },
     },
   },

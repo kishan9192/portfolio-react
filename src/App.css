@@ -98,3 +98,12 @@ p {
         margin-bottom: 75px;
     }
 }
+
+.scaleOnHover {
+    transition: transform 200ms ease-in-out;
+}
+.scaleOnHover:hover {
+    transform: scale(1.15);
+    cursor: pointer;
+}
+

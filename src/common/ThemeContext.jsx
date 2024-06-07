@@ -1,25 +1,30 @@
-import React, {createContext, useState, useContext, useEffect, useStrict, Children} from 'react';
+/* eslint-disable react-refresh/only-export-components */
+/* eslint-disable react/prop-types */
 
-const ThemeContext = createContext()
+import { createContext, useState, useContext, useEffect } from "react";
 
-export const useTheme = () => useContext(ThemeContext)
+const ThemeContext = createContext();
 
-export const ThemeProvider = ({children}) => {
-    const [theme, setTheme] = useState(() => localStorage.getItem('theme') || 'light')
- 
-    useEffect(() => {
-        document.body.setAttribute('data-theme', theme)
-        localStorage.setItem('theme', theme)
-    }, [theme])
+export const useTheme = () => useContext(ThemeContext);
 
-    const toggleTheme = () => {
-        console.log("switched", theme)
-        setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'))
-    }
+export const ThemeProvider = ({ children }) => {
+  const [theme, setTheme] = useState(
+    () => localStorage.getItem("theme") || "light"
+  );
 
-    return (
-        <ThemeContext.Provider value={{theme, toggleTheme}}>
-            {children}
-        </ThemeContext.Provider>
-    )
-}
+  useEffect(() => {
+    document.body.setAttribute("data-theme", theme);
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    console.log("switched", theme);
+    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+  };
+
+  return (
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+      {children}
+    </ThemeContext.Provider>
+  );
+};
