@@ -1,9 +1,8 @@
 import styles from "./ProjectsStyle.module.css";
-import viberr from "../../assets/viberr.png";
 import hipster from "../../assets/hipsster.png";
 import fitlift from "../../assets/fitlift.png";
 import ProjectCard from "../../common/ProjectCard";
-import freshburger from "../../assets/fresh-burger.png";
+import budget from "../../assets/budget.png";
 
 function Projects() {
   return (
@@ -11,16 +10,16 @@ function Projects() {
       <h3 className="subhead-text">Projects</h3>
       <div className={styles.projectsContainer}>
         <ProjectCard
-          src={viberr}
-          title="Viberr"
-          description="Streaming app"
-          link={"https://github.com/kishan9192/Expense-Tracker---React"}
+          src={fitlift}
+          title="Workout Pulse"
+          description="Add workout, track your calorie burn"
+          link={"https://github.com/kishan9192/fitness-tracker"}
         />
         <ProjectCard
-          src={freshburger}
-          title="Project 2"
-          description="Expense tracker app"
-          link="https://github.com/kishan9192/Expense-Tracker---React"
+          src={budget}
+          title="Expense Calculator"
+          description="Add your income and expenses, it shows your balance and transaction history"
+          link="https://github.com/kishan9192/expense-calculator"
         />
         <ProjectCard
           src={hipster}
