@@ -1,5 +1,5 @@
 import styles from "./ProjectsStyle.module.css";
-import hipster from "../../assets/hipsster.png";
+import android from "../../assets/android.png";
 import fitlift from "../../assets/fitlift.png";
 import ProjectCard from "../../common/ProjectCard";
 import budget from "../../assets/budget.png";
@@ -22,16 +22,10 @@ function Projects() {
           link="https://github.com/kishan9192/expense-calculator"
         />
         <ProjectCard
-          src={hipster}
-          title="Hipster"
-          description="Hipster app"
-          link={"https://github.com/kishan9192/Expense-Tracker---React"}
-        />
-        <ProjectCard
-          src={fitlift}
-          title="Fit Lift"
-          description="Fit lift app"
-          link="https://github.com/kishan9192/Expense-Tracker---React"
+          src={android}
+          title="Movie recommendation & sharing"
+          description="Browse through popular, trending or upcoming movies, like them, add them to your watchlist, share them with your friends with whatsapp integration, watch trailer with embedded youtube player"
+          link={"https://github.com/kishan9192/React-Native"}
         />
       </div>
     </section>
