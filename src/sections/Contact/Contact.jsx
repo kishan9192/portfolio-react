@@ -68,18 +68,16 @@ const Contact = () => {
     >
       {alert.show && <Alert {...alert} />}
       <div className="flex-1 min-w-[50%] flex flex-col">
-        <h1 className="head-text">Get in Touch</h1>
-        <form
-          className="w-full flex flex-col gap-7 mt-10"
-          onSubmit={handleSubmit}
-        >
+        <h3 className="subhead-text">Get in Touch</h3>
+        <form className="w-full flex flex-col gap-7" onSubmit={handleSubmit}>
           <label className="text-black-500 font-semibold">
             Name
             <input
               type="text"
               name="name"
+              autoComplete="off"
               className="input"
-              placeholder="Name"
+              placeholder="Your name"
               required
               value={form.name}
               onChange={handleChange}
@@ -94,7 +92,8 @@ const Contact = () => {
               type="text"
               name="email"
               className="input"
-              placeholder="Email"
+              autoComplete="off"
+              placeholder="Your email"
               required
               value={form.email}
               onChange={handleChange}
@@ -109,7 +108,7 @@ const Contact = () => {
               name="message"
               rows={4}
               className="textarea"
-              placeholder="Let me know how I can help you?"
+              placeholder="Looking to add top talent to your team? Shoot me an email."
               required
               value={form.message}
               onChange={handleChange}

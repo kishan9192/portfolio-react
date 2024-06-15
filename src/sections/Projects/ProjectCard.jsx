@@ -11,10 +11,13 @@ const TechStackChip = ({ tech }) => {
 const ProjectCard = ({ project }) => {
   const { name, iconUrl, techStack, description, link } = project;
   return (
-    <div className="shadow hover:shadow-lg hover:cursor-pointer bg-[#fbfbfb] max-w-80 rounded-t-2xl rounded-b-md">
+    <div className="shadow hover:shadow-lg hover:cursor-pointer bg-[#fbfbfb] sm:max-w-72 rounded-t-2xl rounded-b-md">
       <a href={link} target="_blank">
         <div className="m-0">
-          <img className=" h-44 w-full max-w-full" src={iconUrl} />
+          <img
+            className="sm:h-44 h-64 w-full max-w-full rounded-t-2xl"
+            src={iconUrl}
+          />
         </div>
         <div className="p-4 w-full">
           <span className=" font-medium text-2xl">{name}</span>
