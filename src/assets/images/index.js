@@ -8,6 +8,9 @@ import innovaccer from "./innovaccer.png";
 import accolite from "./accolite.png";
 import gfg from "./gfg.png";
 import sanfoundry from "./sanfoundry_logo.png";
+import movie from "./movie.jpg";
+import gym from "./gym.jpg";
+import cash from "./cash.jpg";
 
 export {
   hero,
@@ -20,4 +23,7 @@ export {
   sanfoundry,
   gfg,
   accolite,
+  movie,
+  gym,
+  cash,
 };

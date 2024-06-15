@@ -1,8 +1,14 @@
-import { sanfoundry, innovaccer, gfg, accolite } from "../assets/images";
 import {
-  car,
+  sanfoundry,
+  innovaccer,
+  gfg,
+  accolite,
+  movie,
+  gym,
+  cash,
+} from "../assets/images";
+import {
   css,
-  estate,
   git,
   html,
   javascript,
@@ -10,14 +16,10 @@ import {
   mongodb,
   nextjs,
   nodejs,
-  pricewise,
   react,
   redux,
   sass,
-  snapgram,
-  summiz,
   tailwindcss,
-  threads,
   typescript,
   geeksforgeeks,
   leetcode,
@@ -216,51 +218,34 @@ export const socialLinks = (theme) => [
 
 export const projects = [
   {
-    iconUrl: pricewise,
-    theme: "btn-back-red",
-    name: "Amazon Price Tracker",
+    iconUrl: gym,
+    name: "Workout pulse",
+    techStack: [
+      "React",
+      "Javascript",
+      "NodeJS",
+      "Express",
+      "MongoDB",
+      "TailwindCSS",
+    ],
     description:
-      "Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.",
+      "A user dashboard allowing users to register and login to the portal, add their workout, track the calories burned during each set with the help of charts, and track their past workouts to help them progressively overload and achieve their fitness goals better.",
+    link: "https://github.com/kishan9192/fitness-tracker",
+  },
+  {
+    iconUrl: movie,
+    name: "Watchlistly",
+    techStack: ["React-Native", "Javascript", "CSS"],
+    description:
+      "A movie browsing app that allows browsing through top-rated, trending or upcoming movies. You can like them, add them to your watchlist, share with your friends over whatsapp and watch the trailer on click without navigating to any other app, along with rating, genre and description.",
+    link: "https://github.com/kishan9192/React-Native",
+  },
+  {
+    iconUrl: cash,
+    name: "Expense calculator",
+    techStack: ["React", "Javascript", "TailwindCSS"],
+    description:
+      "A React application that allows addition or deletion of expenses and income, maintaining the transaction history and displays the remaining balance along with total income and expenditure. Allows better management of expenses.",
     link: "https://github.com/kishan9192/expense-calculator",
-  },
-  {
-    iconUrl: threads,
-    theme: "btn-back-green",
-    name: "Full Stack Threads Clone",
-    description:
-      'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-    link: "https://github.com/adrianhajdin/threads",
-  },
-  {
-    iconUrl: car,
-    theme: "btn-back-blue",
-    name: "Car Finding App",
-    description:
-      "Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.",
-    link: "https://github.com/adrianhajdin/project_next13_car_showcase",
-  },
-  {
-    iconUrl: snapgram,
-    theme: "btn-back-pink",
-    name: "Full Stack Instagram Clone",
-    description:
-      "Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.",
-    link: "https://github.com/adrianhajdin/social_media_app",
-  },
-  {
-    iconUrl: estate,
-    theme: "btn-back-black",
-    name: "Real-Estate Application",
-    description:
-      "Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.",
-    link: "https://github.com/adrianhajdin/projects_realestate",
-  },
-  {
-    iconUrl: summiz,
-    theme: "btn-back-yellow",
-    name: "AI Summarizer Application",
-    description:
-      "App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.",
-    link: "https://github.com/adrianhajdin/project_ai_summarizer",
   },
 ];
