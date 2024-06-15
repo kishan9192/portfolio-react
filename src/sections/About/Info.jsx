@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Typewriter } from "react-simple-typewriter";
+import { useTheme } from "../../common/ThemeContext";
 
 export const SubTitle = () => {
   return (
@@ -44,9 +45,14 @@ export const NameTitle = () => {
 };
 
 const Info = () => {
+  const { theme } = useTheme();
   return (
     <div className="text-slate-500 text-justify sm:text-start sm:mt-8">
-      <p>
+      <span
+        className={`${
+          theme == "dark" ? "text-white" : "text-black"
+        } text-2xl font-thin`}
+      >
         I'm a full-stack developer at Innovaccer with over 3 years of
         experience. By day (and often night), I'm a frontend wizard,
         transforming the digital landscape with my expertise in React and
@@ -56,7 +62,7 @@ const Info = () => {
         sharing my passion and knowledge with the community. When I'm not
         coding, you’ll find me strumming my guitar or trekking up mountains.
         Code, strum, hike, repeat!
-      </p>
+      </span>
     </div>
   );
 };
