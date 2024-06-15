@@ -107,3 +107,11 @@ p {
     cursor: pointer;
 }
 
+.arrow {
+    position: relative;
+    animation: moving-arrow 1.5s ease-in-out 1s infinite normal none;
+}
+@keyframes moving-arrow {
+    from {left:0px;}
+    to {left: 8px;}
+}

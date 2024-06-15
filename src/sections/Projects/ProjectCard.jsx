@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
-
+import { useTheme } from "../../common/ThemeContext";
+import "../../../src/index.css";
 const TechStackChip = ({ tech }) => {
   return (
     <div className="mr-2 bg-[#eaeaea] mt-2 px-1 rounded-md">
@@ -9,9 +10,14 @@ const TechStackChip = ({ tech }) => {
 };
 
 const ProjectCard = ({ project }) => {
+  const { theme } = useTheme();
   const { name, iconUrl, techStack, description, link } = project;
   return (
-    <div className="shadow hover:shadow-lg hover:cursor-pointer bg-[#fbfbfb] sm:max-w-72 rounded-t-2xl rounded-b-md">
+    <div
+      className={`${
+        theme == "dark" ? "shadow-dark" : "shadow"
+      } hover:shadow-lg  hover:cursor-pointer bg-[#fbfbfb] sm:max-w-72 rounded-t-2xl rounded-b-md`}
+    >
       <a href={link} target="_blank">
         <div className="m-0">
           <img

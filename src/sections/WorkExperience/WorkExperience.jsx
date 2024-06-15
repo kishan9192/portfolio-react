@@ -6,6 +6,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import "../../App.css";
 
 const WorkExperience = () => {
   const { theme } = useTheme();
@@ -51,7 +52,7 @@ const WorkExperience = () => {
               }}
             >
               <div>
-                <h3 className="text-black text-xl font-poppins font-semibold">
+                <h3 className="text-black text-l font-poppins font-semibold">
                   {experience.title}
                 </h3>
                 <p
@@ -71,6 +72,18 @@ const WorkExperience = () => {
                   </li>
                 ))}
               </ul>
+              {experience.articlesLink && (
+                <a
+                  className="cursor-pointer relative text-lime-600"
+                  href={experience.articlesLink}
+                  target="_blank"
+                >
+                  <span className="text-sm animate-pulse">
+                    Checkout to my articles
+                  </span>
+                  <span className="arrow text-sm"> →</span>
+                </a>
+              )}
             </VerticalTimelineElement>
           ))}
         </VerticalTimeline>

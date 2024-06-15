@@ -166,13 +166,15 @@ export const experiences = [
     title: "Author - Technical Content",
     company_name: "GeeksforGeeks",
     icon: gfg,
-    iconBg: "#EAF9EA",
+    iconBg: "#C0F3BF",
     date: "Dec 2019 - March 2020",
     points: [
       "Wrote new articles/blogs on Data Structures and Algorithms, Computer Networks, Object oriented programming.",
       "Improved and optimized the existing articles using C++ and Python.",
       "Involved in reviews of the improved or new articles.",
     ],
+    articlesLink:
+      "https://www.geeksforgeeks.org/user/mishrakishan1/contributions/",
   },
   {
     title: "Author - Technical Content",
