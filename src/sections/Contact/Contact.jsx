@@ -2,12 +2,14 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { useAlert } from "../../hooks/AlertContext";
+import { useTheme } from "../../common/ThemeContext";
 
 const Contact = () => {
   // const formRef = useRef(null);
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [isLoading, setIsLoading] = useState(false);
-
+  const { theme } = useTheme();
+  console.log("THEME", theme);
   const { showAlert, hideAlert } = useAlert();
 
   const handleChange = (e) => {
@@ -60,6 +62,10 @@ const Contact = () => {
       });
   };
 
+  const labelClass = `${
+    theme == "dark" ? "text-white" : "text-black-500"
+  } font-semibold`;
+
   return (
     <section
       id="contact"
@@ -71,7 +77,7 @@ const Contact = () => {
           className="w-full flex flex-col gap-7 mt-5"
           onSubmit={handleSubmit}
         >
-          <label className="text-black-500 font-semibold">
+          <label className={labelClass}>
             Name
             <input
               type="text"
@@ -87,7 +93,7 @@ const Contact = () => {
             ></input>
           </label>
 
-          <label className="text-black-500 font-semibold">
+          <label className={labelClass}>
             Email
             <input
               type="text"
@@ -103,7 +109,7 @@ const Contact = () => {
             ></input>
           </label>
 
-          <label className="text-black-500 font-semibold">
+          <label className={labelClass}>
             Your Message
             <textarea
               name="message"
