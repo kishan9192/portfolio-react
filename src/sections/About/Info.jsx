@@ -9,16 +9,13 @@ export const SubTitle = () => {
       <span className="blue-gradient_text flex-wrap sm:text-start text-center font-semibold drop-shadow sm:ml-3">
         <Typewriter
           words={[
-            "web applications",
-            "mobile applications",
+            "web apps",
+            "mobile apps",
             "RESTful APIs",
-            "asynchronous backends",
-            "prompts for OpenAI",
-            "intuitive user interfaces",
-            "responsive designs",
-            "maintainable CSS",
-            "reusable UI components",
-            "full-stack applications",
+            "async backend",
+            "OpenAI prompts",
+            "responsive UI",
+            "intuitive design",
           ]}
           loop={1}
           cursor
