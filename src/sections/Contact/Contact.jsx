@@ -1,15 +1,14 @@
 // import styles from "./ContactStyle.module.css";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
-import useAlert from "../../hooks/useAlert";
-import Alert from "../../common/Alert";
+import { useAlert } from "../../hooks/AlertContext";
 
 const Contact = () => {
   // const formRef = useRef(null);
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [isLoading, setIsLoading] = useState(false);
 
-  const { alert, showAlert, hideAlert } = useAlert();
+  const { showAlert, hideAlert } = useAlert();
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -66,7 +65,6 @@ const Contact = () => {
       id="contact"
       className="relative flex lg:flex-row flex-col max-container"
     >
-      {alert.show && <Alert {...alert} />}
       <div className="flex-1 min-w-[50%] flex flex-col">
         <h3 className="subhead-text">Get in Touch</h3>
         <form
