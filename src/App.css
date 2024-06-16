@@ -99,6 +99,13 @@ p {
     }
 }
 
+.scaleProjectCard {
+    transition: transform 200ms ease-in-out;
+}
+.scaleProjectCard:hover {
+    transform: scale(1.02);
+}
+
 .scaleOnHover {
     transition: transform 200ms ease-in-out;
 }

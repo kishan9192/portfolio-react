@@ -51,7 +51,7 @@ const Info = () => {
       <span
         className={`${
           theme == "dark" ? "text-white" : "text-black"
-        } text-2xl font-thin`}
+        } text-2xl font-light`}
       >
         I'm a full-stack developer at Innovaccer with over 3 years of
         experience. By day (and often night), I'm a frontend wizard,

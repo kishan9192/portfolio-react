@@ -192,19 +192,9 @@ export const experiences = [
 
 export const socialLinks = (theme) => [
   {
-    name: "GitHub",
-    iconUrl: theme === "light" ? githubLight : githubDark,
-    link: "https://github.com/kishan9192",
-  },
-  {
     name: "LinkedIn",
     iconUrl: linkedin,
     link: "https://www.linkedin.com/in/kishanmishraa/",
-  },
-  {
-    name: "HackerRank",
-    iconUrl: theme === "light" ? hackerRankDark : hackerrankLight,
-    link: "https://www.hackerrank.com/profile/kishan_mishra",
   },
   {
     name: "Leetcode",
@@ -215,6 +205,16 @@ export const socialLinks = (theme) => [
     name: "GeeksforGeeks",
     iconUrl: geeksforgeeks,
     link: "https://www.geeksforgeeks.org/user/mishrakishan1/",
+  },
+  {
+    name: "GitHub",
+    iconUrl: theme === "light" ? githubLight : githubDark,
+    link: "https://github.com/kishan9192",
+  },
+  {
+    name: "HackerRank",
+    iconUrl: theme === "light" ? hackerRankDark : hackerrankLight,
+    link: "https://www.hackerrank.com/profile/kishan_mishra",
   },
 ];
 

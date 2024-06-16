@@ -69,7 +69,10 @@ const Contact = () => {
       {alert.show && <Alert {...alert} />}
       <div className="flex-1 min-w-[50%] flex flex-col">
         <h3 className="subhead-text">Get in Touch</h3>
-        <form className="w-full flex flex-col gap-7" onSubmit={handleSubmit}>
+        <form
+          className="w-full flex flex-col gap-7 mt-5"
+          onSubmit={handleSubmit}
+        >
           <label className="text-black-500 font-semibold">
             Name
             <input

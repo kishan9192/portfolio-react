@@ -14,7 +14,7 @@ const ProjectCard = ({ project }) => {
   const { name, iconUrl, techStack, description, link } = project;
   return (
     <div
-      className={`${
+      className={`scaleProjectCard ${
         theme == "dark" ? "shadow-dark" : "shadow"
       } hover:shadow-lg  hover:cursor-pointer bg-[#fbfbfb] sm:max-w-72 rounded-t-2xl rounded-b-md`}
     >
