@@ -1,5 +1,5 @@
 import { socialLinks } from "../../constants";
-import CV from "../../assets/Kishan_Mishra_SDE-2.pdf";
+import CV from "../../assets/Kishan_Mishra-SDE-2.pdf";
 import { useTheme } from "../../common/ThemeContext";
 
 const SocialLinks = () => {
