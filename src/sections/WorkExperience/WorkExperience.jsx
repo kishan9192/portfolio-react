@@ -11,7 +11,7 @@ import "../../App.css";
 const WorkExperience = () => {
   const { theme } = useTheme();
   return (
-    <section className="max-container">
+    <section id="work-experience" className="max-container">
       <h3 className="subhead-text">Work Experience</h3>
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
         <span

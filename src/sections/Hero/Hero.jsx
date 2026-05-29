@@ -13,7 +13,7 @@ const Hero = () => {
 
   return (
     <section id="hero" className={styles.container}>
-      <div className="">
+      <div className="flex flex-col">
         <NameTitle />
         <div className="flex flex-col-reverse justify-center items-center sm:justify-between sm:items-start gap-8 sm:flex-row sm:gap-20">
           <div>
@@ -34,7 +34,9 @@ const Hero = () => {
             />
           </div>
         </div>
-        <SocialLinks />
+        <div className="mt-8">
+          <SocialLinks />
+        </div>
       </div>
     </section>
   );

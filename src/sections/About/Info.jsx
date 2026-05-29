@@ -42,24 +42,42 @@ export const NameTitle = () => {
 };
 
 const Info = () => {
+  const info = `I’m a Software Development Engineer II with 5+ years of experience building scalable full-stack systems using React, TypeScript, Python, Django, FastAPI, MongoDB, and distributed backend architectures.`
+
+ const subtext =`I’ve led initiatives in building feature-flag library, a frontend microservice, API optimization, platform design, and system performance improvements, significantly reducing response times and development overhead through reusable infrastructure and architecture improvements.`
+
+const footnote = `Outside of work, I play guitar and make music, and go for treks.`
+
   const { theme } = useTheme();
   return (
-    <div className="text-slate-500 text-justify sm:text-start sm:mt-8">
-      <span
-        className={`${
-          theme == "dark" ? "text-white" : "text-black"
-        } text-2xl font-light`}
-      >
-        I'm a full-stack developer at Innovaccer with over 3 years of
-        experience. By day (and often night), I'm a frontend wizard,
-        transforming the digital landscape with my expertise in React and
-        JavaScript. I enjoy building dynamic, creative products from start to
-        finish, focusing on developing intuitive experiences that continuously
-        grow and improve based on user metrics. I've also written tech articles,
-        sharing my passion and knowledge with the community. When I'm not
-        coding, you’ll find me strumming my guitar or trekking up mountains.
-        Code, strum, hike, repeat!
-      </span>
+    <div className="text-slate-500 text-justify sm:text-start sm:mt-8 flex flex-col items-center justify-start">
+      <div>
+        <span
+          className={`${
+            theme == "dark" ? "text-white" : "text-black"
+          } text-2xl font-light`}
+        >
+        {info}
+        </span>
+      </div>
+      <div className="mt-4">
+        <span
+          className={`${
+            theme == "dark" ? "text-white" : "text-black"
+          } text-2xl font-light`}
+        >
+        {subtext}
+        </span>
+      </div>
+      <div className="mt-4 flex items-start w-full">
+        <span
+          className={`${
+            theme == "dark" ? "text-white" : "text-black"
+          } text-2xl font-light`}
+        >
+        {footnote}
+        </span>
+      </div>
     </div>
   );
 };
